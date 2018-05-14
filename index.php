@@ -68,9 +68,10 @@
 <script type="text/javascript">
  
   function insertData() {
-    var name=$("#name").val();
-    var email=$("#email").val();
-    var gender=$("#gender").val();
+     var name=$("#name").val();
+     var email=$("#email").val();
+     var gender=$("#gender").val();
+     var comm=$("#comm").val();
      var password=$("#password").val();
  
  
@@ -78,7 +79,7 @@
         $.ajax({
             type: "POST",
             url: "insert.php",
-            data: {name:name,email:email,gender:gender,password:password},
+            data: {name:name,email:email,gender:gender,comm:comm,password:password},
             dataType: "JSON",
             success: function(data) {
              $("#message").html(data);

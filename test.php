@@ -101,7 +101,7 @@ else{
 ?>
   
         <div class="page-header">
-            <h1>Read Products</h1>
+            <h3>Read Products</h3>
         </div>
      
     <!-- dynamic content will be here -->
